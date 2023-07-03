@@ -24,17 +24,19 @@ const App = () => {
           <Lottie animationData={Loading} className="lottie"></Lottie>
         </div>
       ) : (
-        <Box width="400px" sx={{ width: { xl: "1488px" } }}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home></Home>}></Route>
-            <Route
-              path="/exercise/:id"
-              element={<ExerciseDetail></ExerciseDetail>}
-            ></Route>
-          </Routes>
-          <Footer></Footer>
-        </Box>
+        <>
+          <Navbar />{" "}
+          <Box width="100%">
+            <Routes>
+              <Route path="/" element={<Home></Home>}></Route>
+              <Route
+                path="/exercise/:id"
+                element={<ExerciseDetail></ExerciseDetail>}
+              ></Route>
+            </Routes>
+            <Footer></Footer>
+          </Box>
+        </>
       )}
     </div>
   );

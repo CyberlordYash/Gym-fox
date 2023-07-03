@@ -30,9 +30,9 @@ const HeroBanner = () => {
         >
           Exercise
         </Typography>
-      </div>
-      <div>
-        <img src={HeroBannerImage} className="hero-banner-img"></img>
+        <div>
+          <img src={HeroBannerImage} className="hero-banner-img"></img>
+        </div>
       </div>
     </div>
   );

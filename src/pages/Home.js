@@ -11,9 +11,8 @@ const Home = () => {
 
   return (
     <Box>
-      <div className="bg">
-        <HeroBanner></HeroBanner>
-      </div>
+      <HeroBanner></HeroBanner>
+
       <SearchExercises
         setExercises={setExercises}
         bodyPart={bodyPart}
